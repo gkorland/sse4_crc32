@@ -1,0 +1,6 @@
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install --msvs_version=2013
+
+build_script: 
+	- make all
