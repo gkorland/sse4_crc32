@@ -3,4 +3,5 @@ install:
   - npm install --msvs_version=2013
 
 build_script: 
-  - make all
+  - ./node_modules/.bin/node-gyp configure
+  - ./node_modules/.bin/node-gyp build 
